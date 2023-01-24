@@ -34,7 +34,7 @@ struct ContentView: View {
                     .lineSpacing(10)
                 
                 Button{
-
+                    
                 }label:{
                     Text("Contact Me")
                         .foregroundColor(.white)
@@ -43,7 +43,7 @@ struct ContentView: View {
                         .padding(.vertical, 10)
                         .frame(maxWidth: .infinity)
                         .background(RoundedRectangle(cornerRadius: 20)
-                                        .foregroundColor(.brown))
+                                        .foregroundColor(.blue))
                 }
                 
                 Text("Skills")
@@ -58,7 +58,6 @@ struct ContentView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 50)
                         Text(me.skills[0])
-                        //Text("Swift")
                     }
                     VStack{
                         Image("SwiftUI")

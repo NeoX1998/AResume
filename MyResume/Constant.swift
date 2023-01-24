@@ -28,8 +28,4 @@ struct Resume {
                                       "TSUNG & CHEN TECHNOLOGIES INCORPORATION",
                                       "2019 年 7 月",
                                       "2019 年 8 月")]
-//    let phoneUrl = "tel://0902252291"
-//    let socialMedia: [(name: String, url: String)] = [("LinkedIn","https://www.linkedin.com/in/profile/williamhgates"),
-//                                                      ("Line","https://line.me/ti/p/Fhgz4-NFLH"),
-//                                                      ("YouTube","https://www.youtube.com/channel/UCsssLDarjKe7K0YtuLrjpcw")]
 }
