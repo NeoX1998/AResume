@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     let me = Resume.shared
     
+    @State private var showAlert = false
+    
     var body: some View {
         ScrollView{
             VStack(spacing: 30){
@@ -33,8 +35,10 @@ struct ContentView: View {
                     .font(.title3)
                     .lineSpacing(10)
                 
+                let alertTitle = "Not available yet"
+                
                 Button{
-                    
+                    showAlert = true
                 }label:{
                     Text("Contact Me")
                         .foregroundColor(.white)
@@ -45,6 +49,12 @@ struct ContentView: View {
                         .background(RoundedRectangle(cornerRadius: 20)
                                         .foregroundColor(.blue))
                 }
+                .alert(alertTitle, isPresented: $showAlert, actions: {
+                    Button("OK") { }
+                },message: {
+                    Text("Sorry, this feature is not available yet. Please retry later.")
+                })
+                                
                 
                 Text("Skills")
                     .bold()
